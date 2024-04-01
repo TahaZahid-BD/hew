@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.tahazahid.android.hew.R
-import com.tahazahid.android.hew.databinding.FragmentOtpBinding
+import com.tahazahid.android.hew.databinding.FragmentLogoutBinding
 import com.tahazahid.android.hew.utils.TinyDB
 
-class OtpFragment : Fragment() {
+class LogoutFragment : Fragment() {
 
-    private var _binding : FragmentOtpBinding? = null
+    private var _binding : FragmentLogoutBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var tinyDB: TinyDB
@@ -20,7 +19,7 @@ class OtpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentOtpBinding.inflate(inflater,container,false)
+        _binding = FragmentLogoutBinding.inflate(inflater,container,false)
 
         tinyDB = TinyDB(requireContext())
 
