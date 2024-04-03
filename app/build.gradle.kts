@@ -53,6 +53,7 @@ dependencies {
     val coroutine_version = "1.6.4"
     val dagger_hilt_version = "2.42"
     val nav_version = "2.7.6"
+    val lottieVersion = "3.4.0"
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -109,4 +110,10 @@ dependencies {
 
     //Powerfull Image Lib
     implementation("io.github.stefanosiano.powerful_libraries:imageview_rs:1.0.25")
+
+    //Lottie
+    implementation("com.airbnb.android:lottie:$lottieVersion")
+
+    implementation("com.github.GoodieBag:Pinview:v1.5")
+
 }
